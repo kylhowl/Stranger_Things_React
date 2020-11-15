@@ -48,13 +48,13 @@ const App = () => {
     return (
     <Router>
     
-    <Greeting userName={userName} loggedIn={loggedIn} posts={posts} filterPost={filterPost} setFilterPost={setFilterPost} />
+    <Greeting userName={userName} loggedIn={loggedIn} posts={posts} setFilterPost={setFilterPost} />
     <section className='app-body'>
     { posts.length ? ( filterPost.length ? <Posts posts={filterPost} userName={userName} setMessage={setMessage} loggedIn={loggedIn} setSinglePost={setSinglePost}/> : <Posts posts={posts} userName={userName} setMessage={setMessage} loggedIn={loggedIn} setSinglePost={setSinglePost}/> ): <Loading option='post-board'/> }
     <Switch>
     
     <Route path='/login'>
-      <Login setUserName={setUserName} setToken={setToken} setLoggedIn={setLoggedIn} loggedIn={loggedIn} user={user} setUser={setUser} pwd={pwd} setPwd={setPwd}/>
+      <Login setUserName={setUserName} setToken={setToken} setLoggedIn={setLoggedIn} user={user} setUser={setUser} pwd={pwd} setPwd={setPwd}/>
     </Route>
     <Route path='/register'>
       <Register setUserName={setUserName} user={user} setToken={setToken} setLoggedIn={setLoggedIn} setUser={setUser} pwd={pwd} setPwd={setPwd}/>

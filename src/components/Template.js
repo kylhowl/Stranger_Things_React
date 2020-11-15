@@ -1,3 +1,5 @@
+// This is just a quick template for the route components.
+
 import React from 'react'
 
 const XXXX = (props) => {

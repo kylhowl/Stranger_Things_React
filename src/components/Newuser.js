@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Newuser = (props) => {
+const Newuser = () => {
 
     return (
         <div className='right-aside'>

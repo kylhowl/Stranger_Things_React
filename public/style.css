@@ -162,6 +162,10 @@ a:visited {
     color: White;
 }
 
+a { 
+    color: white
+}
+
 /* route specific code */
 
 .message {

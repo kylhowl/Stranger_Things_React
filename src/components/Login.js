@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom'
 import { handleLogin } from '../api'
 
-const Login = ( { setUserName, setToken, setLoggedIn, loggedIn, user, setUser, pwd, setPwd } ) => {
+const Login = ( { setUserName, setToken, setLoggedIn, user, setUser, pwd, setPwd } ) => {
 
     const history = useHistory();
     const [ errorMsg, setErrorMsg ] = useState('')

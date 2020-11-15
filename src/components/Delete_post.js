@@ -21,8 +21,7 @@ const Delete_post = ( { singlePost, token, setPosts } ) => {
            setPosts(newPosts);
            history.push('/');
        } else {
-           console.log('Patch response:', res)
-           setMsg('Message edit did not work, please try again or blame Kyle')
+           setMsg('Message edit did not work, please try again or blame Kyle.')
        }
     }
 

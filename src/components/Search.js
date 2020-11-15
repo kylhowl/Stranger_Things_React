@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 
 
-const Search = ( { posts, setFilterPost, filterPost }) => {
+const Search = ( { posts, setFilterPost }) => {
 
     const [ search, setSearch] = useState('')
 
@@ -10,21 +10,21 @@ const Search = ( { posts, setFilterPost, filterPost }) => {
         e.preventDefault();
         
         let copy = []
-        let query = search.split(" ") // creates array of search words
+        let query = search.split(" ") // creates array of search words from input
         
         for ( const post of posts) { // loop over posts
-            const keys = ['location', 'title', 'price', 'description'] // searchable areas of post, tried to access author.username not working.
+            const keys = ['location', 'title', 'price', 'description'] // searchable areas of post
             Loop1 : // label reference for break; starting point after matches are found.
             for ( let key of keys) { // loop over object keys
             
                 for ( let q of query ) { // loop of array of search word(s)
-                    if (!q) {break} // jumps out of loop for undefined fields (code was breaking before)
+                    if (!q) {break} // jumps out of loop for undefined fields 
 
                     let patt = new RegExp(q, 'i',)  // creates regex expression from q that is not case-sensitive
 
                     if (patt.test(post[key])) { // checks for matches returns (true or false)
                         // copy array
-                        copy.push(post)         // add post with match (sometimes works)
+                        copy.push(post)         // add post to copy array
                         break Loop1;  // breaks the loop to eliminate duplicate posts being added
                     }
                 }

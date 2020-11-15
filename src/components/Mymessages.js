@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Redirect } from 'react-router-dom'
 
-const Mymessages = ( { myMessages, userName, setMsg } ) => {
+const Mymessages = ( { myMessages, userName } ) => {
 
     const [ sent , setSent ] = useState([]);
     const [ recieved , setRecieved ] = useState([]);

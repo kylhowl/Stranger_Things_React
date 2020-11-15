@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Search from './Search'
 
-const Greeting = ( { userName, query, setQuery, posts, setFilterPost, filterPost } ) => {
+const Greeting = ( { userName, posts, setFilterPost, filterPost } ) => {
   
     return (
     <div className='app-header'>

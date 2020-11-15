@@ -4,8 +4,6 @@ const BASE = 'https://strangers-things.herokuapp.com/api/2007-UNF-RM-WEB-PT'
 
 export async function getUserName( token ) {
 
-  // console.log(token)
-
   const data = { headers: {
     'Authorization' : `Bearer ${token}`,
     'Content-Type' : 'application/json'
@@ -84,7 +82,6 @@ export async function getPosts(token) {
   try {
     const res = await fetch(`${BASE}/posts`, body)
     const data = await res.json();
-    // console.log(data.data.posts);
     return data.data.posts
   } catch (error) {
     throw (error)
@@ -92,7 +89,7 @@ export async function getPosts(token) {
 }
 
 export async function createPost(object) {
-  // console.log(object)
+
   try {
     const response = await fetch(`${BASE}/posts`, object)
     const data = await response.json()
@@ -139,7 +136,6 @@ export async function postMessage(id, msg, token) {
   try {
     const res = await fetch(`${BASE}/posts/${id}/messages`, data)
     const results = await res.json();
-    // console.log(results)
     return results
   } catch (error) {
     throw (error)

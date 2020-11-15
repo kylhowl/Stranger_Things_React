@@ -21,14 +21,14 @@ const Register = ({ setLoggedIn, setToken, user, setUser, pwd, setPwd, setUserNa
         event.preventDefault();
         document.getElementById('registerForm').reset();
         history.push('/home');
-        console.log("Registration cancelled")
+
     }
 
     const registerFunction = async (event) => {
 
         event.preventDefault();
         let response =  await handleRegister(user,pwd);
-        // console.log(response);
+
         response.error ? setErrorMsg(response.error.message ) : setErrorMsg('');
         if (response.success) {
             setToken(response.data.token);
