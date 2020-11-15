@@ -1,0 +1,222 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+        
+}
+
+body {
+    height: 100vh;
+    background-image: url('header-wall.jpg');
+    background-size: 100% 100%;
+}
+
+.app-header {
+    
+    background-size: cover;
+    height: 10vh;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    font-size: x-large;
+    color: white;
+    text-shadow: 2px 2px red;
+}
+
+.header-foot {
+    display: flex;
+    justify-content: space-between;
+}
+
+.app-title {
+    align-self: center;
+    justify-self: center;
+}
+
+.title-actions {
+    align-self: flex-end;
+    margin-left: 1.5em;
+    margin-bottom: .75em;
+}  
+
+.search-form * {
+    margin: 0 .25em;
+}
+
+.welcome-span {
+    align-self: flex-end;
+    margin-right: 1.5em;
+    margin-bottom: .75em;
+}
+
+.app-body {
+    display: flex;
+    flex-direction: row;
+    height: 82vh;
+}
+
+.post-board {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    width: 70vw;
+    align-items: stretch;    
+}
+
+.post {
+    background-color:rgba(196, 61, 61, .75);
+    border: 3px solid black;
+    margin: .5em auto;
+    width: 48.5%;  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 33vh;
+    border-radius: 5%;
+
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.post-header > * {
+    margin: 0.5em 0.25em;
+}
+
+/* #ebabab */
+.post-body {
+    background-color: rgba(235, 171, 171, .5);
+    padding: 0.25em .5em;
+}
+
+.post-info {
+    margin-bottom: .25em;
+}
+
+.post-actions {
+    padding: 0.5em;
+    display: flex;
+    justify-content: space-between;     
+}
+
+.post-dates {
+    font-size: small;
+}
+
+.post-buttons button {
+    margin: 0 0.5em;
+}
+
+.right-aside {
+    width: 30vw;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    font-size: x-large; 
+    color: white;
+    text-shadow: 2px 2px red;
+}
+
+.right-header, .right-heading {
+    text-align: center;
+}
+
+.right-body {
+    display: flex;
+    flex-direction: column;
+    align-self: center;        
+}
+
+#newuser {
+    text-align: left;
+    margin: 0 0.5em
+}
+
+.right-body button {
+    border-radius: 5%;
+}
+
+.mypost {
+    background-color:  #c43d3d;
+    border: 1px solid black;
+    margin: .5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer {
+    display: flex;
+    height: 8vh;
+    justify-content: space-around;
+    align-items: center;
+    font-size: xx-large;
+    color: white;
+    text-shadow: 2px 2px red;
+}
+
+a:visited {
+    color: White;
+}
+
+/* route specific code */
+
+.message {
+    margin: 0.5em;
+    text-align: left;    
+}
+
+.message-title {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.message-body {
+    margin: 0.25em;
+}
+
+#active-posts h3 , #inactive-posts h3 {
+    font-weight: bold;
+    margin: 0.5em;
+    text-decoration: underline;
+}
+
+#active-posts p {
+    text-align: center;
+}
+
+.mypost {
+    color: black;
+    text-shadow: none;
+}
+
+.message {
+    color: black;
+    text-shadow: none;
+    background-color: #ebabab;
+}
+
+button {
+    margin: 0.25em 0.5em;
+}
+
+.gremlins {
+    text-align: center;
+    margin: auto;
+    color: white
+}
+
+.newuser > p{
+    font-size: 2.5em;
+}
+
+.loginMsg {
+    text-shadow: 2px 2px white;
+}
+
+
+
+
